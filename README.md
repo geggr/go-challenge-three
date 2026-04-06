@@ -43,7 +43,7 @@ Faça a gestão das configurações do servidor no arquivo `cmd/ordersystem/.env
 
 ```env
 DB_DRIVER=mysql
-DB_HOST=localhost
+DB_HOST=mysql
 DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=root
@@ -51,6 +51,7 @@ DB_NAME=orders
 WEB_SERVER_PORT=:8000
 GRPC_SERVER_PORT=50051
 GRAPHQL_SERVER_PORT=8080
+AMQP_URL=amqp://guest:guest@rabbitmq:5672/
 ```
 
 ### 3) Start
